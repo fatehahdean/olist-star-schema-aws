@@ -11,6 +11,7 @@ A star-schema warehouse built from the Brazilian E-commerce (Olist) dataset, usi
 
 ## Data model
 See `docs/erd.png`. `fact_orders` holds one row per order item and joins to `dim_customer`, `dim_product`, and `dim_date`. Payments are excluded from the fact table on purpose: an order can have several payment rows, and joining them would multiply revenue.
+<img width="4562" height="4863" alt="Order Star Schema Model-2026-10-27-214444" src="https://github.com/user-attachments/assets/230de032-3e88-4e5b-9d28-23d8d353a40c" />
 
 ## Findings
 Source: Olist dataset, about 113k order items from 2016 to 2018.
